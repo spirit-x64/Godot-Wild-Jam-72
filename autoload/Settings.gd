@@ -37,5 +37,5 @@ func apply_settings():
 # General
 var power_saving: bool = false : 
 	set(value):
-		emit_signal("settings_updated")
 		power_saving = value
+		emit_signal("settings_updated")
