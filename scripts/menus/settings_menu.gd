@@ -5,6 +5,7 @@ var game_config
 
 
 func _ready():
+	sync_settings()
 	Settings.connect("settings_updated", sync_settings)
 
 

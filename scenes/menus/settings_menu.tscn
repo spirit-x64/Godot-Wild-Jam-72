@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://b4igrfn5ir7wu"]
 
-[ext_resource type="Script" path="res://scenes/menus/settings_menu.gd" id="1_ni2n0"]
+[ext_resource type="Script" path="res://scripts/menus/settings_menu.gd" id="1_q4u6p"]
 
 [node name="settings_menu" type="Node"]
-script = ExtResource("1_ni2n0")
+script = ExtResource("1_q4u6p")
 
 [node name="TabContainer" type="TabContainer" parent="."]
 custom_minimum_size = Vector2(600, 450)
