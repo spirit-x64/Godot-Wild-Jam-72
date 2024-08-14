@@ -61,13 +61,100 @@ size_flags_horizontal = 3
 visible = false
 layout_mode = 2
 
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Controls"]
+custom_minimum_size = Vector2(584, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="TabContainer/Controls/ScrollContainer"]
+custom_minimum_size = Vector2(568, 0)
+layout_mode = 2
+size_flags_vertical = 3
+collapsed = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Controls/ScrollContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="TabContainer/Controls/ScrollContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="Graphics" type="TabBar" parent="TabContainer"]
 visible = false
 layout_mode = 2
 
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Graphics"]
+custom_minimum_size = Vector2(584, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="TabContainer/Graphics/ScrollContainer"]
+custom_minimum_size = Vector2(568, 0)
+layout_mode = 2
+size_flags_vertical = 3
+collapsed = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Graphics/ScrollContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="TabContainer/Graphics/ScrollContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="Audio" type="TabBar" parent="TabContainer"]
 visible = false
 layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Audio"]
+custom_minimum_size = Vector2(584, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="TabContainer/Audio/ScrollContainer"]
+custom_minimum_size = Vector2(568, 0)
+layout_mode = 2
+size_flags_vertical = 3
+collapsed = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Audio/ScrollContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="TabContainer/Audio/ScrollContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="back" type="Button" parent="."]
 custom_minimum_size = Vector2(64, 0)
