@@ -31,4 +31,11 @@ func load_config():
 
 
 func apply_settings():
-	pass
+	OS.low_processor_usage_mode = power_saving
+
+
+# General
+var power_saving: bool = false : 
+	set(value):
+		emit_signal("settings_updated")
+		power_saving = value

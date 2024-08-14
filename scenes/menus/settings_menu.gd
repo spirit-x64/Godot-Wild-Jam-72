@@ -16,4 +16,8 @@ func back():
 
 
 func sync_settings():
-	pass
+	%power_saving.button_pressed = Settings.power_saving
+
+
+func toggle_power_saving(is_toggled_on: bool):
+	Settings.power_saving = is_toggled_on

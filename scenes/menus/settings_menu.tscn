@@ -48,6 +48,11 @@ collapsed = true
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="power_saving" type="CheckButton" parent="TabContainer/General/ScrollContainer/HSplitContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Power Saving Mode"
+
 [node name="VBoxContainer2" type="VBoxContainer" parent="TabContainer/General/ScrollContainer/HSplitContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -79,4 +84,5 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Back"
 
+[connection signal="toggled" from="TabContainer/General/ScrollContainer/HSplitContainer/VBoxContainer/power_saving" to="." method="toggle_power_saving"]
 [connection signal="pressed" from="back" to="." method="back"]
